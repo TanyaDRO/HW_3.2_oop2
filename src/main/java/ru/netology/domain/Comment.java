@@ -1,40 +1,49 @@
 package ru.netology.domain;
 
 public class Comment {
-    private int id;
-    private User author;
-    private String date;
-    private String text;
+    private int count;
+    private boolean userCanPost;
+    private boolean groupsCanPost;
+    private boolean userCanClose;
+    private boolean userCanOpen;
 
-    public int getId() {
-        return id;
+    public int getCount() {
+        return count;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setCount(int count) {
+        this.count = count;
     }
 
-    public User getAuthor() {
-        return author;
+    public boolean isUserCanPost() {
+        return userCanPost;
     }
 
-    public void setAuthor(User author) {
-        this.author = author;
+    public void setUserCanPost(boolean userCanPost) {
+        this.userCanPost = userCanPost;
     }
 
-    public String getDate() {
-        return date;
+    public boolean isGroupsCanPost() {
+        return groupsCanPost;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setGroupsCanPost(boolean groupsCanPost) {
+        this.groupsCanPost = groupsCanPost;
     }
 
-    public String getText() {
-        return text;
+    public boolean isUserCanClose() {
+        return userCanClose;
     }
 
-    public void setText(String text) {
-        this.text = text;
+    public void setUserCanClose(boolean userCanClose) {
+        this.userCanClose = userCanClose;
+    }
+
+    public boolean isUserCanOpen() {
+        return userCanOpen;
+    }
+
+    public void setUserCanOpen(boolean userCanOpen) {
+        this.userCanOpen = userCanOpen;
     }
 }
